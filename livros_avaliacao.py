@@ -48,10 +48,13 @@ with open ("livros.txt", "r") as livros:
     while y:
 
         for dados in listaLivros:
-            
-            avaliacao =  verificaAvaliacao(dados[1])
+            try: 
+                avaliacao =  verificaAvaliacao(dados[1])
 
-            leitura = verificaLeitura(dados[1])
+                leitura = verificaLeitura(dados[1])
+
+            except Exception :
+                print('')
 
             with open ("livros_avaliacao.txt","a") as avaliacaoSalve:
                 avaliacaoSalve.write(f'{dados[0]},{dados[1]},{dados[2]},{avaliacao:.2f},{leitura}\n')

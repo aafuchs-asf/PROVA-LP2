@@ -1,0 +1,1 @@
+[['1997', ' Harry Potter e a Pedra Filosofal', ' J.K. Rowling', '10.00', 'LIDO'], ['1954', ' A Sociedade do Anel', ' J.R.R. Tolkien', '10.00', 'LIDO'], ['2012', ' A Culpa e das Estrelas', ' John Green', '10.00', 'LIDO'], ['2018', ' Minha Historia', ' Michelle Obama', '9.90', 'LIDO'], ['2015', ' A Garota do Trem', ' Paula Hawkins', '8.60', 'LENDO']]

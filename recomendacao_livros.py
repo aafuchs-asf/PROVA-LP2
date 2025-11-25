@@ -10,11 +10,12 @@ with open ("livros_avaliacao.txt", "r") as livros:
 
         if primal[0] != '' and primal[4] != 'NA FILA':
 
-            listaRecomenda.append(primal[3])
+            listaRecomenda.append(primal)
 
         
-
-
-    listaRecomenda.sort(key = lambda x: (-x[3], x[1]))
+    listaRecomenda.sort(key = lambda avaliacao: float(avaliacao[3]), reverse=True)
+  
     livros5 = listaRecomenda[:5]
-    print(f'{livros5} : top 5')
+
+    with open ("livros_recomendados.txt", "a") as arquivo:
+        arquivo.write(f'{livros5}')
